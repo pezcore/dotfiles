@@ -7,7 +7,7 @@ set t_Co=256
 set guioptions=  "remove menu bar
 "set guifont=Monaco\ 9
 "set guifont=Monaco\ 10
-set guifont=Terminess\ Powerline\ 11
+set guifont=Terminess\ Powerline\ 20
 set popt=paper:letter
 set autoread
 

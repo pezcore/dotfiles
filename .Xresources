@@ -52,7 +52,7 @@
 
 URxvt.scrollBar: false
 !URxvt.font: xft:Monaco:size=9
-URxvt.font: xft:Terminess Powerline:size=10
+URxvt.font: xft:Terminess Powerline:size=20
 
 
 ! URxvt*termName:                       string
