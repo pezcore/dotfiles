@@ -6,5 +6,8 @@
 [core]
 	autocrlf = input
 	editor = gvim -f
+	pager = less -S
 [merge]
 	conflictstyle = diff3
+[color]
+	ui = auto
