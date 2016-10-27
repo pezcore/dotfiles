@@ -35,8 +35,18 @@ set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
 set shiftround    " round indent to multiple of 'shiftwidth'
 set autoindent    " align the new line indent with the previous line
 
-colo xoria256
+colo bubblegum-256-dark
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#default#section_truncate_width = {
+    \ 'b': 79,
+    \ 'x': 60,
+    \ 'y': 88,
+    \ 'z': 90,
+    \ 'warning': 80,
+    \ 'error': 80,
+    \ }
+let g:airline#extensions#whitespace#trailing_format = 'tw[%s]'
+let g:airline#extensions#branch#displayed_head_limit = 10
 
 " Easy motion search bindings
 map  / <Plug>(easymotion-sn)
