@@ -10,10 +10,10 @@ set guioptions=  "remove menu bar
 set guifont=Terminess\ Powerline\ 11
 set popt=paper:letter
 
-" Octave syntax 
-augroup filetypedetect 
-  au! BufRead,BufNewFile *.m,*.oct set filetype=octave 
-augroup END 
+" Octave syntax
+augroup filetypedetect
+  au! BufRead,BufNewFile *.m,*.oct set filetype=octave
+augroup END
 
 " Powerline
 " python from powerline.vim import setup as powerline_setup
@@ -21,7 +21,7 @@ augroup END
 " python del powerline_setup
 
 nmap <F8> :TagbarToggle<CR>
-call pathogen#infect() 
+call pathogen#infect()
 
 set gcr+=n-v-c:blinkon80-blinkoff80-blinkwait700
 set gcr+=i:ver20-blinkon80-blinkoff80-blinkwait700
@@ -67,7 +67,9 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:syntastic_matlab_checkers = mlint
+
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
