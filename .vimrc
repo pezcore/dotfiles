@@ -1,5 +1,5 @@
-:filetype on
-:syntax on
+filetype on
+syntax on
 autocmd vimenter * NERDTree
 set nu!
 set lbr!
@@ -9,11 +9,8 @@ set guioptions=  "remove menu bar
 "set guifont=Monaco\ 10
 set guifont=Terminess\ Powerline\ 11
 set popt=paper:letter
+set autoread
 
-" Octave syntax
-augroup filetypedetect
-  au! BufRead,BufNewFile *.m,*.oct set filetype=octave
-augroup END
 
 " Powerline
 " python from powerline.vim import setup as powerline_setup
