@@ -39,8 +39,8 @@ let g:airline#extensions#default#section_truncate_width = {
     \ 'x': 60,
     \ 'y': 88,
     \ 'z': 90,
-    \ 'warning': 80,
-    \ 'error': 80,
+    \ 'warning': 110,
+    \ 'error': 10,
     \ }
 let g:airline#extensions#whitespace#trailing_format = 'tw[%s]'
 let g:airline#extensions#branch#displayed_head_limit = 10
