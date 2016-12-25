@@ -88,3 +88,4 @@ source $ZSH/oh-my-zsh.sh
 alias ll='ls++ --potsf'
 alias la='ls -A'
 alias l='ls -CF'
+alias trc=transmission-remote-cli
