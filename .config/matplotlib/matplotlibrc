@@ -265,7 +265,7 @@ backend      : tkagg
                                # rather than hyphen.  See
                                # http://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
 # color cycle for plot lines
-axes.color_cycle    : 5e81b5, ff9c24, 8fb131, ec6235, 8778b3, c56e11, 5d9ec8
+# axes.color_cycle    : 5e81b5, ff9c24, 8fb131, ec6235, 8778b3, c56e11, 5d9ec8
                                             # as list of string colorspecs:
                                             # single letter, long name, or
                                             # web-style hex
