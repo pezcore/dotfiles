@@ -90,3 +90,9 @@ alias ll='ls++ --potsf'
 alias la='ls -A'
 alias l='ls -CF'
 alias trc=transmission-remote-cli
+alias rm='saferm.sh'
+
+alias -g :L='| less -S'
+alias -g :H='| head'
+alias -g :T='| tail'
+alias -g :G='| grep'
