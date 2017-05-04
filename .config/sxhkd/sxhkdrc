@@ -86,7 +86,7 @@ super + {_,shift + }{1-9,0}
 
 # send the focused node to the next local desktop
 super + ctrl + bracket{left,right}
-    bspc node -d next.local
+    bspc node -d {prev,next}.local
 
 #
 # preselect
