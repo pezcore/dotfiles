@@ -91,6 +91,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias trc=transmission-remote-cli
 alias rm='saferm.sh'
+alias jnew='dt=$(date +%Y%m%d_%H%M); echo $dt > $dt && gvim $dt'
 
 alias -g :L='| less -S'
 alias -g :H='| head'
