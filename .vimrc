@@ -18,6 +18,7 @@ set autoread
 " python del powerline_setup
 
 nmap <F8> :TagbarToggle<CR>
+nmap <F9> :e .<CR>
 call pathogen#infect()
 
 set gcr+=n-v-c:blinkon80-blinkoff80-blinkwait700
