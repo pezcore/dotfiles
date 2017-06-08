@@ -88,6 +88,9 @@ super + {_,shift + }{1-9,0}
 super + ctrl + bracket{left,right}
     bspc node -d {prev,next}.local
 
+super + {Left,Right}
+    bspc node @/ -C {forward,backward}
+
 #
 # preselect
 #
