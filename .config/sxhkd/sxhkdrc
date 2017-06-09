@@ -162,3 +162,10 @@ super + space
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# take a screenshot
+Print
+    scrot images/scrots/$(date +%Y%m%d_%H%M%S.png)
+
+super + Print
+    scrot -u images/scrots/$(date +%Y%m%d_%H%M%S.png)
