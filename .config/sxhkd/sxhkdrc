@@ -154,7 +154,7 @@ super + Return
 	urxvt
 
 ctrl + alt + l
-    xscreensaver-command -l
+    lock.sh /home/tom/images/key_icon.png
 
 super + space
 	dmenu_run
