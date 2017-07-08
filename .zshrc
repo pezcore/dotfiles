@@ -92,6 +92,7 @@ alias l='ls -CF'
 alias trc=transmission-remote-cli
 alias jnew='dt=$(date +%Y%m%d_%H%M); echo $dt > $dt && gvim $dt'
 alias pylab='ipython --pylab'
+alias cfn="printf '\e]710;%s\007'"
 
 alias -g :L='| less -S'
 alias -g :H='| head'
