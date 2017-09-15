@@ -154,3 +154,6 @@ Print
 
 super + Print
     scrot -u images/scrots/$(date +%Y%m%d_%H%M%S.png)
+
+ctrl + Print
+    sleep .2 && scrot -s images/scrots/$(date +%Y%m%d_%H%M%S.png)
