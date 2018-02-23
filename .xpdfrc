@@ -1,0 +1,7 @@
+bind b any pageUp
+bind / any find
+bind n any findNext
+bind N any findPrevious
+bind s any singlePageMode
+bind d any sideBySideSingleMode
+bind z any zoomFitPage
