@@ -5,3 +5,7 @@ bind N any findPrevious
 bind s any singlePageMode
 bind d any sideBySideSingleMode
 bind z any zoomFitPage
+bind j any scrollDown(20)
+bind k any scrollUp(20)
+bind h any scrollLeft(20)
+bind l any scrollRight(20)
