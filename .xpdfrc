@@ -9,3 +9,26 @@ bind j any scrollDown(20)
 bind k any scrollUp(20)
 bind h any scrollLeft(20)
 bind l any scrollRight(20)
+
+# display fonts ---------------------------------------------------------------
+# These map the Base-14 fonts to the Type 1 fonts that ship with
+# ghostscript.  You'll almost certainly want to use something like
+# this, but you'll need to adjust this to point to wherever
+# ghostscript is installed on your system.  (But if the fonts are
+# installed in a "standard" location, xpdf will find them
+# automatically.)
+
+fontFile Times-Roman           /usr/share/fonts/gsfonts/NimbusRoman-Regular.otf
+fontFile Times-Italic          /usr/share/fonts/gsfonts/NimbusRoman-Italic.otf
+fontFile Times-Bold            /usr/share/fonts/gsfonts/NimbusRoman-Bold.otf
+fontFile Times-BoldItalic      /usr/share/fonts/gsfonts/NimbusRoman-BoldItalic.otf
+fontFile Helvetica             /usr/share/fonts/gsfonts/NimbusSans-Regular.otf
+fontFile Helvetica-Oblique     /usr/share/fonts/gsfonts/NimbusSans-Oblique.otf
+fontFile Helvetica-Bold        /usr/share/fonts/gsfonts/NimbusSans-Bold.otf
+fontFile Helvetica-BoldOblique /usr/share/fonts/gsfonts/NimbusSans-BoldOblique.otf
+fontFile Courier               /usr/share/fonts/gsfonts/NimbusMonoPS-Regular.otf
+fontFile Courier-Oblique       /usr/share/fonts/gsfonts/NimbusMonoPS-Italic.otf
+fontFile Courier-Bold          /usr/share/fonts/gsfonts/NimbusMonoPS-Bold.otf
+fontFile Courier-BoldOblique   /usr/share/fonts/gsfonts/NimbusMonoPS-BoldItalic.otf
+fontFile Symbol                /usr/share/fonts/gsfonts/StandardSymbolsPS.otf
+fontFile ZapfDingbats          /usr/share/fonts/gsfonts/Z003-MediumItalic.otf
