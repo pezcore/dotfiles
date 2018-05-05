@@ -104,3 +104,9 @@ alias lsext='find . -type f | perl -ne '"'"'print $1 if m/\.([^.\/]+)$/'"'"' | s
 
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+note () {
+    dt=$(date +%Y%m%d_%H%M)
+    echo ${dt}_$1
+    nvim ${dt}_$1.md
+}
