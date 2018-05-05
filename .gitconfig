@@ -5,7 +5,7 @@
 	tool = gvimdiff -f
 [core]
 	autocrlf = input
-	editor = gvim -f
+	editor = nvim
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [merge]
 	conflictstyle = diff3
