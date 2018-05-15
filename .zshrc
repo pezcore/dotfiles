@@ -110,3 +110,5 @@ note () {
     echo ${dt}_$1
     nvim ${dt}_$1.md
 }
+
+alias glo='git log --format="%C(Yellow)%h %Cblue%ad %Cred%<(15,ltrunc)%an %C(auto)%d %s" --date=format:"%a %Y%m%d %H%M%S"'
