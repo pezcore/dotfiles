@@ -17,6 +17,7 @@ set autoread
 " python powerline_setup()
 " python del powerline_setup
 
+let g:tagbar_width = 25
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :e .<CR>
 call pathogen#infect()
