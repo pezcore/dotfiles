@@ -1,27 +1,61 @@
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+Plug 'junegunn/vim-easy-align'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-syntastic/syntastic'
+Plug 'gcmt/taboo.vim'
+Plug 'majutsushi/tagbar'
+Plug 'vim-airline/vim-airline'
+Plug 'easymotion/vim-easymotion'
+Plug 'Valloric/YouCompleteMe'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'nathanaelkane/vim-indent-guides'
+
+" color themes
+Plug 'baskerville/bubblegum'
+Plug 'chriskempson/base16-vim'
+Plug 'nightsense/vimspectr'
+Plug 'aradunovic/perun.vim'
+Plug 'nightsense/stellarized'
+Plug 'dim13/smyck.vim'
+Plug 'kadekillary/skull-vim'
+Plug 'ajmwagar/vim-deus'
+Plug 'nanotech/jellybeans.vim'
+Plug 'preocanin/greenwint'
+Plug 'rhysd/vim-color-spring-night'
+Plug 'fneu/breezy'
+Plug 'davidklsn/vim-sialoquent'
+Plug 'robertmeta/nofrils'
+Plug 'dylanaraps/crayon'
+Plug 'juanpabloaj/vim-pixelmuerto'
+Plug 'kamwitsta/nordisk'
+Plug 'mbbill/vim-seattle'
+Plug 'rakr/vim-one'
+
+" Initialize plugin system
+call plug#end()
+
 filetype on
 syntax on
-autocmd vimenter * NERDTree
-set nu!
+set nu
 set lbr!
 set t_Co=256
 set guioptions=  "remove menu bar
-"set guifont=Monaco\ 9
-"set guifont=Monaco\ 10
-set guifont=Terminess\ Powerline\ 11
 set popt=paper:letter
 set autoread
 
-
-" Powerline
-" python from powerline.vim import setup as powerline_setup
-" python powerline_setup()
-" python del powerline_setup
-
-let g:tagbar_width = 25
+" Keybindings for tagbar
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :e .<CR>
-call pathogen#infect()
+let g:tagbar_width = 25
 
+" cursor mode blinking and stuff
 set gcr+=n-v-c:blinkon80-blinkoff80-blinkwait700
 set gcr+=i:ver20-blinkon80-blinkoff80-blinkwait700
 
@@ -34,40 +68,15 @@ set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
 set shiftround    " round indent to multiple of 'shiftwidth'
 set autoindent    " align the new line indent with the previous line
 
-colo bubblegum-256-dark
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#default#section_truncate_width = {
-    \ 'b': 79,
-    \ 'x': 60,
-    \ 'y': 88,
-    \ 'z': 90,
-    \ 'warning': 110,
-    \ 'error': 10,
-    \ }
-let g:airline#extensions#whitespace#trailing_format = 'tw[%s]'
-let g:airline#extensions#branch#displayed_head_limit = 10
-
 " Easy motion search bindings
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
-
-" These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
-" Without these mappings, `n` & `N` works fine. (These mappings just provide
-" different highlight method and have some other features )
-map  n <Plug>(easymotion-next)
-map  N <Plug>(easymotion-prev)
-
-" Integration of the mlint Matlab code checker with the :make command
-" This is from the matlab vim bundle by Fabrice Guy
-autocmd BufEnter *.m    compiler mlint
 
 " Recommended Syntastic settings from https://github.com/scrooloose/syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_matlab_checkers = ['mlint']
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
