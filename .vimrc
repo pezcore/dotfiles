@@ -44,6 +44,9 @@ call plug#end()
 filetype on
 syntax on
 set nu
+set rnu
+set termguicolors
+colo base16-woodland
 set lbr!
 set t_Co=256
 set guioptions=  "remove menu bar
