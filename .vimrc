@@ -56,6 +56,7 @@ set autoread
 " Keybindings for tagbar
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :e .<CR>
+autocmd VimEnter * nested :TagbarOpen
 let g:tagbar_width = 25
 
 " cursor mode blinking and stuff
