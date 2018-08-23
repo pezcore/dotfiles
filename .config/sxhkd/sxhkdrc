@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	gnome-terminal
+	urxvt
 
 # make sxhkd reload its configuration files:
 super + Escape
