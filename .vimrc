@@ -52,6 +52,7 @@ set t_Co=256
 set guioptions=  "remove menu bar
 set popt=paper:letter
 set autoread
+set colorcolumn=80
 
 " Keybindings for tagbar
 nmap <F8> :TagbarToggle<CR>
