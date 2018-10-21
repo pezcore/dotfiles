@@ -94,7 +94,7 @@ alias jnew='dt=$(date +%Y%m%d_%H%M); echo $dt > $dt && gvim $dt'
 alias pylab='ipython --pylab'
 alias cfn="printf '\e]710;%s\007'"
 alias gch="git rev-parse --short HEAD"
-alias hd="hexdump -C"
+alias hd="xxd -a -u"
 
 alias -g :L='| less -S'
 alias -g :H='| head'
@@ -113,3 +113,4 @@ note () {
 
 alias glo='git log --format="%C(Yellow)%h %Cblue%ad %Cred%<(15,ltrunc)%an %C(auto)%d %s" --date=format:"%a %Y%m%d %H%M%S"'
 alias tprint='enscript -b "%D{%Y%m%d %H:%M:%S}|\$n|\$%/\$="'
+alias today='date +%Y%m%d'
