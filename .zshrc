@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # some more ls aliases
 alias ll='ls++ --potsf'
 alias la='ls -A'
-alias l='ls -CF'
+alias l='ls -lhF --time-style="+%Y%m%d_%H%M"'
 alias trc=transmission-remote-cli
 alias jnew='dt=$(date +%Y%m%d_%H%M); echo $dt > $dt && gvim $dt'
 alias pylab='ipython --pylab'
