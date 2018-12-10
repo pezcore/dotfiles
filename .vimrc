@@ -41,7 +41,7 @@ Plug 'rakr/vim-one'
 " Initialize plugin system
 call plug#end()
 
-filetype on
+filetype plugin on
 syntax on
 set nu
 set rnu
@@ -63,15 +63,6 @@ let g:tagbar_width = 25
 " cursor mode blinking and stuff
 set gcr+=n-v-c:blinkon80-blinkoff80-blinkwait700
 set gcr+=i:ver20-blinkon80-blinkoff80-blinkwait700
-
-" PEP 8 stuff
-set textwidth=79  " lines longer than 79 columns will be broken
-set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
-set tabstop=4     " an hard TAB displays as 4 columns
-set expandtab     " insert spaces when hitting TABs
-set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
-set shiftround    " round indent to multiple of 'shiftwidth'
-set autoindent    " align the new line indent with the previous line
 
 " Easy motion search bindings
 map  / <Plug>(easymotion-sn)
