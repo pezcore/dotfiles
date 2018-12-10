@@ -43,16 +43,11 @@ call plug#end()
 
 filetype plugin on
 syntax on
-set nu
-set rnu
-set termguicolors
-colo base16-woodland
-set lbr!
+set nu rnu tgc lbr ar cc=80
+colo base16-tomorrow-night
 set t_Co=256
 set guioptions=  "remove menu bar
 set popt=paper:letter
-set autoread
-set colorcolumn=80
 
 " Keybindings for tagbar
 nmap <F8> :TagbarToggle<CR>
