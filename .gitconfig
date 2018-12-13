@@ -11,3 +11,5 @@
 	conflictstyle = diff3
 [color]
 	ui = auto
+[format]
+	pretty = format:%C(yellow)commit %C(auto)%H %d%nParent %P%nTree   %T%nAuthor: %an <%ae>%nDate:   %ad %Cgreen(%ar)%nCommtr: %cn <%ce>%nCDate:  %cd %Cgreen(%cr)%n%n%w(0,4,4)%Cblue%B%n
