@@ -120,7 +120,7 @@ alias ll='ls++ --potsf'
 alias la='ls -A'
 alias l='exa -lbhgF --git --time-style=long-iso'
 alias lx='exa -lbhgFsext --git --time-style=long-iso'
-alias lt='exa -lbhgFsnew --git --time-style=long-iso'
+alias lt='exa -lbhgFsold --git --time-style=long-iso'
 alias ltree='exa -lbhgFT --git --color=always --time-style=long-iso'
 alias trc=transmission-remote-cli
 alias jnew='dt=$(date +%Y%m%d_%H%M); echo $dt > $dt && gvim $dt'
