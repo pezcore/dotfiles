@@ -5,7 +5,37 @@ export ZSH=~/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="norm"
+ZSH_THEME="spaceship"
+
+SPACESHIP_PROMPT_ORDER=(
+  time          # Time stamps section
+  user          # Username section
+  host          # Hostname section
+  dir           # Current directory section
+  git           # Git section (git_branch + git_status)
+  exec_time     # Execution time
+  line_sep      # Line break
+  battery       # Battery level and status
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
+)
+
+SPACESHIP_CHAR_SYMBOL=λ
+SPACESHIP_CHAR_SUFFIX=" "
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_TIME_COLOR=white
+SPACESHIP_USER_SHOW=always
+SPACESHIP_USER_SUFFIX=""
+SPACESHIP_USER_PREFIX=""
+SPACESHIP_HOST_PREFIX=%{$fg[yellow]%}@
+SPACESHIP_HOST_SHOW=always
+SPACESHIP_HOST_COLOR=yellow
+SPACESHIP_DIR_TRUNC_REPO=false
+SPACESHIP_DIR_PREFIX=""
+SPACESHIP_DIR_COLOR=green
+SPACESHIP_GIT_BRANCH_COLOR=blue
+SPACESHIP_VI_MODE_SHOW=false
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
