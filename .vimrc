@@ -43,7 +43,7 @@ call plug#end()
 
 filetype plugin on
 syntax on
-set nu rnu tgc lbr ar cc=80
+set nu rnu tgc lbr ar cc=80 et sw=4
 colo base16-tomorrow-night
 set t_Co=256
 set guioptions=  "remove menu bar
