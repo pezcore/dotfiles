@@ -16,6 +16,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'inkarkat/vim-SpellCheck'
+Plug 'inkarkat/vim-ingo-library'
 
 " color themes
 Plug 'baskerville/bubblegum'
