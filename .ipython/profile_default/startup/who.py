@@ -19,7 +19,8 @@ def _who(vardict, sort=False):
 
     print(
         f"{'dtype':<7} {'name':{namelen}} {'shape':{shapelen}} "
-        f"{'flags':<7} {'data_pointer':<14} {'nbytes':12} human_nbytes\n",
+        f"{'flags':<7} {'id':<14} {'data_pointer':<14} {'nbytes':12} "
+        "human_nbytes\n",
         "=" * total_len, sep=""
     )
 
@@ -34,7 +35,7 @@ def _who(vardict, sort=False):
             "X" if y.flags.writebackifcopy else " "])
         print(
             f"{y.dtype.str:7} {x:{namelen}} {str(y.shape):{shapelen}} "
-            f"{flags:7} 0X{y.ctypes._as_parameter_.value:12X} {y.nbytes:<12}",
+            f"{flags:7} 0X{id(y):12X} 0X{y.ctypes.data:12X} {y.nbytes:<12}",
             human_readable_size(y.nbytes, "<6.2f")
         )
 
