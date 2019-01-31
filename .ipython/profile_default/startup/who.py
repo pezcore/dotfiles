@@ -7,7 +7,12 @@ def human_readable_size(size, fmt):
         size /= 1024.0
     return f"{size:{fmt}} {unit}"
 
-def _who(vardict, sort=False):
+def woo(vardict=None, sort=False):
+
+    if vardict is None:
+        vardict = globals()
+    elif not isinstance(vardict, dict):
+        vardict = vars(vardict)
 
     d_realnames = {
         x : y for x, y in vardict.items() if isinstance(y, np.ndarray)
@@ -38,5 +43,3 @@ def _who(vardict, sort=False):
             f"{flags:7} 0X{id(y):12X} 0X{y.ctypes.data:12X} {y.nbytes:<12}",
             human_readable_size(y.nbytes, "<6.2f")
         )
-
-get_ipython().define_macro('woo','_who(globals())')
