@@ -26,12 +26,12 @@ def _who(vardict, sort=False):
     it = sorted(d_realnames.items()) if sort else d_realnames.items()
     for x, y in it:
         flags = ''.join([
-            "C" if y.flags.c_contiguous else "",
-            "F" if y.flags.f_contiguous else "",
-            "O" if y.flags.owndata else "",
-            "W" if y.flags.writeable else "",
-            "A" if y.flags.aligned else "",
-            "X" if y.flags.writebackifcopy else ""])
+            "C" if y.flags.c_contiguous else " ",
+            "F" if y.flags.f_contiguous else " ",
+            "O" if y.flags.owndata else " ",
+            "W" if y.flags.writeable else " ",
+            "A" if y.flags.aligned else " ",
+            "X" if y.flags.writebackifcopy else " "])
         print(
             f"{y.dtype.str:7} {x:{namelen}} {str(y.shape):{shapelen}} "
             f"{flags:7} 0X{y.ctypes._as_parameter_.value:12X} {y.nbytes:<12}",
