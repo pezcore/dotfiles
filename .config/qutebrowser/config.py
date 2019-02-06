@@ -20,6 +20,9 @@ base0C = "#8ec07c"
 base0D = "#83a598"
 base0E = "#d3869b"
 base0F = "#d65d0e"
+cfblue = "#528BC1"
+#rang = "#362409"
+rang = "#FFCB7E"
 
 # set qutebrowser colors
 
@@ -238,16 +241,16 @@ c.colors.tabs.even.fg = base05
 c.colors.tabs.even.bg = base00
 
 # Foreground color of selected odd tabs.
-c.colors.tabs.selected.odd.fg = base00
+c.colors.tabs.selected.odd.fg = rang
 
 # Background color of selected odd tabs.
-c.colors.tabs.selected.odd.bg = base05
+c.colors.tabs.selected.odd.bg = cfblue
 
 # Foreground color of selected even tabs.
-c.colors.tabs.selected.even.fg = base00
+c.colors.tabs.selected.even.fg = rang
 
 # Background color of selected even tabs.
-c.colors.tabs.selected.even.bg = base05
+c.colors.tabs.selected.even.bg = cfblue
 
 # Background color for webpages if unset (or empty to use the theme's
 # color).
