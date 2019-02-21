@@ -83,7 +83,8 @@ plugins=(colored-man-pages git archlinux colorize fasd vi-mode fzf)
 
 # User configuration
 
-export PATH=/opt/anaconda3/bin:/opt/MATLAB/R2016b/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+echo "Pre source Path is" $PATH
+export PATH=~/software/anaconda3/bin:~/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 cdpath=(. ~ ~/src)
 
@@ -93,11 +94,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
