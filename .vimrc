@@ -83,6 +83,13 @@ nmap <silent> <A-k> :wincmd k<CR>
 nmap <silent> <A-j> :wincmd j<CR>
 nmap <silent> <A-h> :wincmd h<CR>
 nmap <silent> <A-l> :wincmd l<CR>
+tnoremap <A-h> <C-\><C-N><C-w>h
+tnoremap <A-j> <C-\><C-N><C-w>j
+tnoremap <A-k> <C-\><C-N><C-w>k
+tnoremap <A-l> <C-\><C-N><C-w>l
 
 " quick saving
 nmap <C-S> :update<CR>
+" open a terminal in a new tab
+nmap <C-T> :tabed term://zsh<CR>a
+nmap <C-W><C-T> :sp term://zsh<CR>a
