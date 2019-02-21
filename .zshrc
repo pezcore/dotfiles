@@ -79,7 +79,7 @@ SPACESHIP_VI_MODE_SHOW=false
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages git archlinux colorize fasd)
+plugins=(colored-man-pages git archlinux colorize fasd vi-mode fzf)
 
 # User configuration
 
@@ -148,6 +148,5 @@ alias glo='git log --format="%C(Yellow)%h %Cblue%ad %Cred%<(15,ltrunc)%an %C(aut
 alias tprint='enscript -b "%D{%Y%m%d %H:%M:%S}|\$n|\$%/\$="'
 alias today='date +%Y%m%d'
 
-bindkey -v
 bindkey -a k up-line-or-beginning-search
 bindkey -a j down-line-or-beginning-search
