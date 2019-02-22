@@ -18,6 +18,8 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'inkarkat/vim-SpellCheck'
 Plug 'inkarkat/vim-ingo-library'
+Plug 'rhysd/vim-clang-format'
+Plug 'junegunn/fzf.vim'
 
 " color themes
 Plug 'baskerville/bubblegum'
