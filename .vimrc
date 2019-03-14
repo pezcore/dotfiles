@@ -41,6 +41,13 @@ Plug 'juanpabloaj/vim-pixelmuerto'
 Plug 'kamwitsta/nordisk'
 Plug 'mbbill/vim-seattle'
 Plug 'rakr/vim-one'
+Plug 'arcticicestudio/nord-vim'
+Plug 'romainl/Apprentice'
+Plug 'jacoborus/tender.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'dikiaap/minimalist'
+Plug 'morhetz/gruvbox'
+Plug 'cocopon/iceberg.vim'
 
 " Initialize plugin system
 call plug#end()
