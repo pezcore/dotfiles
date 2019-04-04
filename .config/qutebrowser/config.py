@@ -1,4 +1,5 @@
 c.spellcheck.languages = ['en-US']
+c.downloads.location.directory = "~/downloads"
 
 # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
 # Base16 qutebrowser template by theova
