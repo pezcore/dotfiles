@@ -102,3 +102,9 @@ nmap <C-S> :update<CR>
 " open a terminal in a new tab
 nmap <C-T> :tabed term://zsh<CR>a
 nmap <C-W><C-T> :sp term://zsh<CR>a
+
+" fzf bindings
+nmap <C-\><C-E> :Files<CR>
+
+let g:NERDTreeWinSize = 26
+map <C-n> :NERDTreeToggle<CR>
