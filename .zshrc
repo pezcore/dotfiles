@@ -37,6 +37,7 @@ SPACESHIP_DIR_COLOR=green
 SPACESHIP_GIT_BRANCH_COLOR=blue
 SPACESHIP_VI_MODE_SHOW=false
 
+export LESS="-RFXS"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -151,3 +152,5 @@ alias today='date +%Y%m%d'
 
 bindkey -a k up-line-or-beginning-search
 bindkey -a j down-line-or-beginning-search
+
+alias todo=todo.sh
