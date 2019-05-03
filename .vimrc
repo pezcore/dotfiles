@@ -48,6 +48,8 @@ Plug 'joshdick/onedark.vim'
 Plug 'dikiaap/minimalist'
 Plug 'morhetz/gruvbox'
 Plug 'cocopon/iceberg.vim'
+Plug 'jdkanani/vim-material-theme'
+Plug 'vim-airline/vim-airline-themes'
 
 " Initialize plugin system
 call plug#end()
@@ -55,7 +57,7 @@ call plug#end()
 filetype plugin on
 syntax on
 set nu rnu tgc lbr ar cc=80 et sw=4
-colo base16-tomorrow-night
+" colo base16-tomorrow-night
 set t_Co=256
 set guioptions=  "remove menu bar
 set popt=paper:letter
@@ -86,6 +88,15 @@ let g:syntastic_check_on_wq = 0
 
 
 let g:airline_powerline_fonts = 1
+let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+let g:airline#extensions#default#section_truncate_width = {
+  \ 'b': 79,
+  \ 'x': 60,
+  \ 'y': 88,
+  \ 'z': 105,
+  \ 'warning': 140,
+  \ 'error': 140,
+  \ }
 
 " fast buffer switching
 nmap <silent> <A-k> :wincmd k<CR>
