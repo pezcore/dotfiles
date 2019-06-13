@@ -111,8 +111,8 @@ tnoremap <A-l> <C-\><C-N><C-w>l
 " quick saving
 nmap <C-S> :update<CR>
 " open a terminal in a new tab
-nmap <C-T> :tabed term://zsh<CR>a
-nmap <C-W><C-T> :sp term://zsh<CR>a
+nmap <C-T> :tabed term://zsh<CR> :set nonu nornu<CR>a
+nmap <C-W><C-T> :sp term://zsh<CR> :set nonu nornu<CR>a
 
 " fzf bindings
 nmap <C-\><C-E> :Files<CR>
