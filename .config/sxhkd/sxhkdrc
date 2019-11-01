@@ -167,10 +167,10 @@ XF86AudioLowerVolume
 
 # take a screenshot
 Print
-    scrot images/scrots/$(date +%Y%m%d_%H%M%S.png)
+    scrot ~/images/scrots/$(date +%Y%m%d_%H%M%S.png)
 
 super + Print
-    scrot -u images/scrots/$(date +%Y%m%d_%H%M%S.png)
+    scrot -u ~/images/scrots/$(date +%Y%m%d_%H%M%S.png)
 
 ctrl + Print
-    sleep .2 && scrot -s images/scrots/$(date +%Y%m%d_%H%M%S.png)
+    sleep .2 && scrot -s ~/images/scrots/$(date +%Y%m%d_%H%M%S.png)
