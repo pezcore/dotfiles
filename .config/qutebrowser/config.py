@@ -257,3 +257,13 @@ c.colors.tabs.selected.even.bg = cfblue
 # color).
 # c.colors.webpage.bg = base00
 config.load_autoconfig()
+
+
+
+# This is a temporary workaround to circumvent google's blocking qutebrowser
+# from their services
+config.set(
+    'content.headers.user_agent',
+    'Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/77.0',
+    'https://accounts.google.com/*'
+)
