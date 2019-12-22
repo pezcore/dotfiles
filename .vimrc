@@ -50,6 +50,7 @@ Plug 'morhetz/gruvbox'
 Plug 'cocopon/iceberg.vim'
 Plug 'jdkanani/vim-material-theme'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'srcery-colors/srcery-vim'
 
 " Initialize plugin system
 call plug#end()
@@ -119,3 +120,5 @@ nmap <C-\><C-E> :Files<CR>
 
 let g:NERDTreeWinSize = 26
 map <C-n> :NERDTreeToggle<CR>
+
+colo srcery
