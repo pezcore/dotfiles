@@ -1,11 +1,7 @@
-[user]
-	name = Tom Boyd
-	email = tboyd@scitec.com
 [diff]
 	tool = gvimdiff -f
 [core]
 	autocrlf = input
-	editor = nvim
 	pager = diff-so-fancy | less --tabs=4 -RFXS
 [merge]
 	conflictstyle = diff3
