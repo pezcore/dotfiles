@@ -154,7 +154,7 @@ note () {
     nvim ${dt}_$1.md
 }
 
-alias glo='git log --format="%C(Yellow)%h %Cblue%ad %Cred%<(15,ltrunc)%an %C(auto)%d %s" --date=format:"%a %Y%m%d %H%M%S"'
+alias glo='git log --format="%C(Yellow)%m%h %Cblue%ad %Cred%<(15,ltrunc)%an %C(auto)%d %s" --date=format:"%a %Y%m%d %H%M%S"'
 alias tprint='enscript -b "%D{%Y%m%d %H:%M:%S}|\$n|\$%/\$="'
 alias today='date +%Y%m%d'
 
