@@ -256,8 +256,15 @@ c.colors.tabs.selected.even.bg = cfblue
 # Background color for webpages if unset (or empty to use the theme's
 # color).
 # c.colors.webpage.bg = base00
-config.load_autoconfig()
+# config.load_autoconfig()
 
+# Fonts
+c.fonts.default_size = "14pt"
+c.fonts.default_family = "monospace"
+c.fonts.completion.entry = "14pt monospace"
+c.fonts.tabs.selected = "14pt monospace"
+c.fonts.tabs.unselected = "14pt monospace"
+c.fonts.prompts = "14pt monospace"
 
 
 # This is a temporary workaround to circumvent google's blocking qutebrowser
