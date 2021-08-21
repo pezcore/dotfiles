@@ -126,10 +126,8 @@ fi
 
 
 # some more ls aliases
-alias ll='ls++ --potsf'
-alias la='ls -A'
-alias l='exa -lbhgF --git --time-style=long-iso'
-alias lx='exa -lbhgFsext --git --time-style=long-iso'
+alias l='lsd -l --group-dirs first --date "+%Y%m%d %H%M%S"'
+alias lx='l -X'
 alias lt='exa -lbhgFsold --git --time-style=long-iso'
 alias ltree='exa -lbhgFT --git --color=always --time-style=long-iso'
 alias trc=transmission-remote-cli
