@@ -126,7 +126,7 @@ fi
 
 
 # some more ls aliases
-alias l='lsd -l --group-dirs first --date "+%Y%m%d %H%M%S"'
+alias l='lsd -l --group-dirs first'
 alias lx='l -X'
 alias lt='exa -lbhgFsold --git --time-style=long-iso'
 alias ltree='exa -lbhgFT --git --color=always --time-style=long-iso'
