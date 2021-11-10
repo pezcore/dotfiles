@@ -52,6 +52,12 @@ Plug 'cocopon/iceberg.vim'
 Plug 'jdkanani/vim-material-theme'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'srcery-colors/srcery-vim'
+Plug 'sainnhe/gruvbox-material'
+Plug 'sainnhe/sonokai'
+Plug 'haystackandroid/stellarized'
+Plug 'haystackandroid/snow'
+Plug 'haystackandroid/carbonized'
+Plug 'haystackandroid/vimspectr'
 
 " Initialize plugin system
 call plug#end()
