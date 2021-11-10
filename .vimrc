@@ -20,6 +20,7 @@ Plug 'inkarkat/vim-SpellCheck'
 Plug 'inkarkat/vim-ingo-library'
 Plug 'rhysd/vim-clang-format'
 Plug 'junegunn/fzf.vim'
+Plug 'rust-lang/rust.vim'
 
 " color themes
 Plug 'baskerville/bubblegum'
