@@ -92,7 +92,7 @@ autoload -U compinit && compinit
 
 # User configuration
 
-echo "Pre source Path is" $PATH
+# echo "Pre source Path is" $PATH
 export PATH=~/software/anaconda3/bin:~/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 cdpath=(. ~ ~/src)
